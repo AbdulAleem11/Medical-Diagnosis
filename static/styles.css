@@ -1,0 +1,440 @@
+*{
+    font-family: Verdana;
+    
+}
+body
+{
+    background-color:#ffc478;
+}
+.dropdown-item:hover{
+    background-color:darksalmon;
+}
+
+.nav-item{
+    margin-left: 60px;
+}
+.carousel-inner {
+    height: 550px;
+  }
+  
+.carousel-inner img {
+    width: 200px;
+    height: 600px;
+    object-fit: cover;
+  }
+
+
+.contactMe,.needOfTheHour,.aboutData{
+    background-color:#e1bc91;
+    border: 2px solid black;
+}
+
+
+.aboutData_image{
+    position: relative;
+    float: left;
+    width:200px;
+    height:180px;
+    margin-left:15px;
+    object-fit: cover;
+    right:20px;
+    bottom:35px;
+  }
+
+
+
+.card{
+    display: inline-block;
+    margin-left: 25px;
+}
+
+/* Create three equal columns that floats next to each other */
+.column {
+    float: left;
+    width: 50%;
+    padding: 10px;
+    height: 300px; /* Should be removed. Only for demonstration */
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+
+.rating {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  overflow: hidden;
+  flex-direction: row-reverse;
+  height: 150px;
+  position: relative;
+}
+
+.rating-0 {
+  filter: grayscale(100%);
+}
+
+.rating > input {
+  display: none;
+}
+
+.rating > label {
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+  margin-top: auto;
+  background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' width='126.729' height='126.73'%3e%3cpath fill='%23e3e3e3' d='M121.215 44.212l-34.899-3.3c-2.2-.2-4.101-1.6-5-3.7l-12.5-30.3c-2-5-9.101-5-11.101 0l-12.4 30.3c-.8 2.1-2.8 3.5-5 3.7l-34.9 3.3c-5.2.5-7.3 7-3.4 10.5l26.3 23.1c1.7 1.5 2.4 3.7 1.9 5.9l-7.9 32.399c-1.2 5.101 4.3 9.3 8.9 6.601l29.1-17.101c1.9-1.1 4.2-1.1 6.1 0l29.101 17.101c4.6 2.699 10.1-1.4 8.899-6.601l-7.8-32.399c-.5-2.2.2-4.4 1.9-5.9l26.3-23.1c3.8-3.5 1.6-10-3.6-10.5z'/%3e%3c/svg%3e");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 76%;
+  transition: .3s;
+}
+
+.rating > input:checked ~ label,
+.rating > input:checked ~ label ~ label {
+  background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' width='126.729' height='126.73'%3e%3cpath fill='%23fcd93a' d='M121.215 44.212l-34.899-3.3c-2.2-.2-4.101-1.6-5-3.7l-12.5-30.3c-2-5-9.101-5-11.101 0l-12.4 30.3c-.8 2.1-2.8 3.5-5 3.7l-34.9 3.3c-5.2.5-7.3 7-3.4 10.5l26.3 23.1c1.7 1.5 2.4 3.7 1.9 5.9l-7.9 32.399c-1.2 5.101 4.3 9.3 8.9 6.601l29.1-17.101c1.9-1.1 4.2-1.1 6.1 0l29.101 17.101c4.6 2.699 10.1-1.4 8.899-6.601l-7.8-32.399c-.5-2.2.2-4.4 1.9-5.9l26.3-23.1c3.8-3.5 1.6-10-3.6-10.5z'/%3e%3c/svg%3e");
+}
+
+
+.rating > input:not(:checked) ~ label:hover,
+.rating > input:not(:checked) ~ label:hover ~ label {
+  background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' width='126.729' height='126.73'%3e%3cpath fill='%23d8b11e' d='M121.215 44.212l-34.899-3.3c-2.2-.2-4.101-1.6-5-3.7l-12.5-30.3c-2-5-9.101-5-11.101 0l-12.4 30.3c-.8 2.1-2.8 3.5-5 3.7l-34.9 3.3c-5.2.5-7.3 7-3.4 10.5l26.3 23.1c1.7 1.5 2.4 3.7 1.9 5.9l-7.9 32.399c-1.2 5.101 4.3 9.3 8.9 6.601l29.1-17.101c1.9-1.1 4.2-1.1 6.1 0l29.101 17.101c4.6 2.699 10.1-1.4 8.899-6.601l-7.8-32.399c-.5-2.2.2-4.4 1.9-5.9l26.3-23.1c3.8-3.5 1.6-10-3.6-10.5z'/%3e%3c/svg%3e");
+}
+
+.emoji-wrapper {
+  width: 100%;
+  text-align: center;
+  height: 100px;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.emoji-wrapper:before,
+.emoji-wrapper:after{
+  content: "";
+  height: 15px;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  z-index: 1;
+}
+
+.emoji {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: .3s;
+}
+
+.emoji > svg {
+  margin: 15px 0; 
+  width: 70px;
+  height: 70px;
+  flex-shrink: 0;
+}
+
+#rating-1:checked ~ .emoji-wrapper > .emoji { transform: translateY(-100px); }
+#rating-2:checked ~ .emoji-wrapper > .emoji { transform: translateY(-200px); }
+#rating-3:checked ~ .emoji-wrapper > .emoji { transform: translateY(-300px); }
+#rating-4:checked ~ .emoji-wrapper > .emoji { transform: translateY(-400px); }
+#rating-5:checked ~ .emoji-wrapper > .emoji { transform: translateY(-500px); }
+
+.githubIcon{
+    margin-left: 250px;
+    margin-top: 100px;
+}
+
+.Footer{
+    background-color: black;
+    color: white;
+    left: 50;
+    bottom: 0;
+    width: 100%;
+    
+    
+    margin-bottom: 0;
+}
+.Footer p,h6{
+    margin-bottom: 0;
+    display: inline-block;
+    position: relative;
+    left: 590px;
+}
+.Footer h6{
+    left: 50px;
+}
+
+
+.githubIcon,.emailIcon{
+    margin:0px;
+    display: inline-block;
+    position: relative;
+    left: 30px;
+}
+
+.emailIcon{
+    left:800px;
+}
+
+.BreastCancer1{
+    width: 300px;
+    height: 250px;
+    object-fit: cover;
+   margin-left: 10px;
+}
+.BreastCancer2{
+    width: 400px;
+    height: 300px;
+   
+   margin-left: 10px;
+}
+
+
+
+
+.BCancer_Modal_Button{
+    position: relative;
+    bottom: 10px;
+    left:580px;
+    margin: 0px;
+}
+
+/* .modal-body .login{
+    background-color: violet;
+    margin: 0;
+    width: 450px;
+    height: 500px;
+} */
+
+.modal-footer button{
+  
+    position: relative;
+    right: 100px;
+}
+
+.card{
+  position: relative;
+  background-color: burlywood;
+  margin-left: 30px;
+}
+
+.dataCard{
+  position: relative;
+  background-color: burlywood;
+  margin-left: 30rem;
+}
+
+.CardiovasImage1{
+  width: 400px;
+  height: 300px;
+ margin-left: 10px;
+ object-fit: cover;
+}
+
+.HFailureImage1{
+  width: 400px;
+  height: 300px;
+ margin-left: 10px;
+ object-fit: cover;
+}
+
+.HFailureImage2{
+  width: 350px;
+  height: 300px;
+ margin-left: 35px;
+ object-fit: cover;
+}
+
+.CardiovasImage2{
+  width: 400px;
+  height: 300px;
+ margin-left: 10px;
+}
+
+.CardiovasImage3{
+  width: 420px;
+  height: 300px;
+ margin-left: 10px;
+}
+
+.img-preview {
+  width: 256px;
+  height: 256px;
+  position: relative;
+  border: 5px solid #F8F8F8;
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.1);
+  margin-top: 1em;
+  margin-bottom: 1em;    
+}
+
+.img-preview>div {
+  width: 100%;
+  height: 100%;
+  background-size: 256px 256px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+input[type="file"] {
+  display: none;
+}
+
+.upload-label{
+  display: inline-block;
+  padding: 12px 30px;
+  background: #39D2B4;
+  color: #fff;
+  font-size: 1em;
+  transition: all .4s;
+  cursor: pointer;
+}
+
+.upload-label:hover{
+  background: #34495E;
+  color: #39D2B4;
+}
+
+.loader {
+  border: 8px solid #f3f3f3; /* Light grey */
+  border-top: 8px solid #3498db; /* Blue */
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.UrineDiagnosis1{
+  width: 280px;
+  height: 350px;
+ margin-left: 10px;
+ margin-bottom: 0px;
+}
+.UrineDiagnosis2{
+  position: relative;
+  right:50px;
+  width: 400px;
+  height: 350px;
+ margin-left: 0px;
+ margin-bottom: 0px;
+}
+.UrineDiagnosis3{
+  width: 400px;
+  height: 350px;
+ margin-left: 0px;
+ margin-bottom: 0px;
+}
+
+.HyperTension1{
+  width: 420px;
+  height: 350px;
+ margin-left: 10px;
+ margin-bottom: 0px;
+}
+
+.HyperTension2{
+  position: relative;
+  right:-8px;
+  width: 380px;
+  height: 350px;
+ margin-left: 0px;
+ margin-bottom: 0px;
+}
+
+.HyperTension3{
+  width: 450px;
+  height: 350px;
+ margin-left: 0px;
+ margin-bottom: 0px;
+}
+
+.StrokeImage1{
+  position: relative;
+  width: 520px;
+  height:340px;
+ right:8px;
+}
+
+.StrokeImage2{
+  width: 350px;
+  height:270px;
+  
+}
+
+
+.Diabetes1{
+  position:relative;
+  bottom:10px;
+  width: 600px;
+  height:400px;
+object-fit: contain;
+margin-left: 15px;
+}
+
+.Diabetes2{
+  position:relative;
+  left:30px;
+  bottom:10px;
+  width: 600px;
+  height:400px;
+object-fit: contain;
+}
+
+.PlantarFascitis1{
+  position:relative;
+  bottom: -15px;
+  width: 600px;
+  height:340px;
+object-fit: contain;
+right:40px;
+}
+
+.Fertility1{
+  position:relative;
+  width: 600px;
+  height:340px;
+object-fit: contain;
+left:40px;
+}
+
+.Fertility2{
+  position:relative;
+
+  width: 600px;
+  height:340px;
+object-fit: contain;
+left:40px;
+}
+
+.navbar-nav > li > a {
+    margin-top: 0;
+    padding: 0 0;
+}
+
+.modal-footer button{
+  position: relative;
+  bottom: 69px;
+  right: 300px;
+}
+
+
+.modal-footer {
+  padding-bottom: 0;
+  height: 0;
+  border: 0;
+}
+
+.mb-3 input{
+  border: 1px solid black;
+}
+

@@ -34,7 +34,7 @@ model = pickle.load(open('breastCancer.pkl', 'rb'))
 model_cardiovascular=pickle.load(open('echocardiogramResults.pkl', 'rb'))
 model_cardiovascular_scalar=pickle.load(open('echocardiogramScaler.pkl', 'rb'))
 
-model_covid=load_model('covid_model_resnet50_b32_e5_acc92.23.h5')
+model_covid=load_model('/app/covid_model_resnet50_b32_e5_acc92.23.h5')
 
 model_brain=load_model('brain_model_vgg19_b16_ep_10_acc_93.33.h5')
 

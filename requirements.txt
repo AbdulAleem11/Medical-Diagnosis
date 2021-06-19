@@ -1,4 +1,4 @@
-python3-h5py
+h5py==3.2.1
 Flask==1.1.2
 gunicorn==19.9.0
 itsdangerous==1.1.0

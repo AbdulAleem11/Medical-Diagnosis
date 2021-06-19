@@ -34,23 +34,23 @@ model = pickle.load(open('breastCancer.pkl', 'rb'))
 model_cardiovascular=pickle.load(open('echocardiogramResults.pkl', 'rb'))
 model_cardiovascular_scalar=pickle.load(open('echocardiogramScaler.pkl', 'rb'))
 
-model_covid=load_model('covid_model_resnet50_b32_e5_acc92.23.h5')
+#model_covid=load_model('covid_model_resnet50_b32_e5_acc92.23.h5')
 
-model_brain=load_model('brain_model_vgg19_b16_ep_10_acc_93.33.h5')
+#model_brain=load_model('brain_model_vgg19_b16_ep_10_acc_93.33.h5')
 
-model_malaria=load_model("MalariaAcc92-71E5B32.h5")
+#model_malaria=load_model("MalariaAcc92-71E5B32.h5")
 
-model_urineDiagnosis=load_model("urineDiagnosis_modela100t0.6bs15.h5")
-model_urineDiagnosis_scalar=pickle.load(open("urinaryDisorderScaler.pkl","rb"))
+#model_urineDiagnosis=load_model("urineDiagnosis_modela100t0.6bs15.h5")
+#model_urineDiagnosis_scalar=pickle.load(open("urinaryDisorderScaler.pkl","rb"))
 
 model_heartFailure=pickle.load(open('heartFailureAcc87r90.pkl','rb'))
 
-model_hypertension=load_model("HypertensionAcc70r70.h5")
-model_hypertension_scalar=pickle.load(open("HypertensionScaler.pkl","rb"))
+#model_hypertension=load_model("HypertensionAcc70r70.h5")
+#model_hypertension_scalar=pickle.load(open("HypertensionScaler.pkl","rb"))
 
 model_stroke=pickle.load(open('StrokeAcc1r1.pkl',"rb"))
 
-model_diabetes=load_model("DiabetesAcc76rec0-85-1-71.h5")
+#model_diabetes=load_model("DiabetesAcc76rec0-85-1-71.h5")
 
 
 
@@ -171,7 +171,7 @@ def covidCheck():
         f.save(file_path)
         # Make prediction
         
-        a = covid_predict(file_path, model_covid)
+        #a = covid_predict(file_path, model_covid)
         if(a==0):
             preds="With an accuracy of 92.23% you have been diagnosed with COVID"
         elif(a==1):
@@ -201,7 +201,7 @@ def hemmorhageCheck():
         f.save(file_path)
         # Make prediction
         
-        a = brainHemmorhage_predict(file_path, model_brain)
+       # a = brainHemmorhage_predict(file_path, model_brain)
         if(a==0):
             preds="With an accuracy of 93.33% you do not have Brain Hemmorhage, but please go for further tests."
         else:
@@ -229,7 +229,7 @@ def urine_disorder_predict():
             
             columns_to_scale = ["Temperature"]
             df[columns_to_scale]=model_urineDiagnosis_scalar.transform(df[columns_to_scale])
-            prediction = model_urineDiagnosis.predict(np.asarray(df.to_numpy()))
+            #prediction = model_urineDiagnosis.predict(np.asarray(df.to_numpy()))
             
             if (prediction[0][0]>0.5 and prediction[0][1]>0.5):
                 return render_template('Result.html', prediction_text=f"Inflammation of urinary bladder as well as nephritis of renal pelvis origin detected with an accuracy of 100%")
@@ -343,7 +343,7 @@ def diabetes_predict():
             print("The data is",df)
             
 
-            prediction = model_diabetes.predict(np.asarray(df))
+            #prediction = model_diabetes.predict(np.asarray(df))
             
             if (prediction[0][0]==0):
                 return render_template('Result.html', prediction_text=f"Congratulations, with an accuracy of 76% and sensitivity of 85% you are not diagnosed with diabetes")
@@ -428,7 +428,7 @@ def malariaCheck():
         f.save(file_path)
         # Make prediction
         
-        a = malaria_predict(file_path, model_malaria)
+        #a = malaria_predict(file_path, model_malaria)
         if(a==0):
             preds="With an accuracy of 92.71% you are diagnosed with malaria."
         else:

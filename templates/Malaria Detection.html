@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="shortcut icon" href="../static/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="../static/favicon.ico" type="image/x-icon">
+  <title>Malaria Detection</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+  <link rel="stylesheet" href="../static/styles.css">
+
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="/index.html">
+        <img src="..\static\logo.jpg" alt="" width="45" height="40">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+        aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="/index.html">Home</a>
+          </li>
+
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+              data-bs-toggle="dropdown" aria-expanded="false">
+              Heart Diagnosis
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <li><a class="dropdown-item" href="/heartFailure.html">Heart failure risk Detection</a></li>
+              <li><a class="dropdown-item " href="/EchocardiogramAnalysis.html">Echocardiogram result Analysis</a></li>
+              <li><a class="dropdown-item" href="/hypertensionDetection.html">Hypertension Detection</a></li>
+            </ul>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+              data-bs-toggle="dropdown" aria-expanded="false">
+              Brain Diagnosis
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <li><a class="dropdown-item" href="/BrainHemorrhageDetection.html">Brain Hemorrhage Detection</a></li>
+              <li><a class="dropdown-item" href="/strokePrediction.html">Stroke Prediction</a></li>
+            </ul>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle " href="#" id="navbarDropdownMenuLink" role="button"
+              data-bs-toggle="dropdown" aria-expanded="false">
+              Cancer Diagnosis
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <li><a class="dropdown-item " href="/breastCancerPrediction.html">Breast Cancer Prediction</a></li>
+              <li><a class="dropdown-item btn disabled" href="#">Skin Cancer Prediction</a></li>
+            </ul>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdownMenuLink" role="button"
+              data-bs-toggle="dropdown" aria-expanded="false">
+              Other Diagnosis
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <li><a class="dropdown-item" href=/urineDisorderPrediction.html>Urinary Bladder/Kidney Disorder
+                  Detection</a></li>
+              <li><a class="dropdown-item btn disabled" href="#">Blindness Detection</a></li>
+              <li><a class="dropdown-item " href="#">COVID Detection</a></li>
+              <li><a class="dropdown-item" href="/diabetesDetection.html">Diabetes Detection</a></li>
+              <li><a class="dropdown-item" href="/maleFertilityDetection.html">Fertility Analysis</a></li>
+              <li><a class="dropdown-item active" href="#">Malaria Detection</a></li>
+              <li><a class="dropdown-item" href="/plantarFascitisDetection.html">Plantar Fascitis Detection</a></li>
+            </ul>
+          </li>
+
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Maleria Model -->
+  <div class="container-fluid">
+    <h2 style="text-align: center;">Using microscopic cell images, a model to detect maleria</h2>
+    <hr>
+  </div>
+  <div class="container-fluid BCancer">
+    <div class="row">
+      <div class="col-sm">
+        <img src="../static/maleria1.jpg" class="Fertility1" alt="">
+        <br>
+
+      </div>
+
+      <div class="col-sm">
+        <img src="../static/malaria2.gif" class="Fertility2" alt="">
+        <br>
+      </div>
+
+    </div>
+
+    <br>
+    <div class="container-fluid">
+      <p style="font-family: cursive; text-align: center; margin-bottom: 8px;">
+        Malaria is caused by Plasmodium parasites. The parasites are spread to people through the bites of infected
+        female Anopheles mosquitoes, called "malaria vectors."
+        There are 5 parasite species that cause malaria in humans, and 2 of these species – P. falciparum and P. vivax –
+        pose the greatest threat. <br>
+        Malaria is preventable and curable.
+        In 2019, there were an estimated 229 million cases of malaria worldwide.
+        The estimated number of malaria deaths stood at 409 000 in 2019. <br>
+        The first symptoms – fever, headache, and chills – may be mild and difficult to recognize as malaria. If not treated within 24 hours, P. falciparum malaria can progress to severe illness, often leading to death.
+        Get it detected fast via our model.
+      </p>
+    </div>
+
+    <br>
+    <!-- Pop up for taking the data  -->
+    <!-- Button trigger modal -->
+    <a class="btn btn-danger BCancer_Modal_Button" href="/predictMalaria.html" role="button">Malaria Detection</a>
+
+    <br>
+
+    <div class="Footer">
+      <p style="text-align: center;"> Copyright 2020-21</p>
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-github githubIcon"
+        viewBox="0 0 16 16">
+        <path
+          d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z" />
+      </svg>
+      <h6><a href="https://github.com/AbdulAleem11/Medical-Diagnosis-Project-Files" target="_blank">Github Link</a></h6>
+
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+        class="bi bi-envelope emailIcon" viewBox="0 0 16 16">
+        <path
+          d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2zm13 2.383-4.758 2.855L15 11.114v-5.73zm-.034 6.878L9.271 8.82 8 9.583 6.728 8.82l-5.694 3.44A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.739zM1 11.114l4.758-2.876L1 5.383v5.73z" />
+      </svg>
+      <h6 style="left: 820px;">heroliabdul@gmail.com</h6>
+    </div>
+
+    <script>
+      function validate(evt) {
+        var theEvent = evt || window.event;
+
+        // Handle paste
+        if (theEvent.type === 'paste') {
+          key = event.clipboardData.getData('text/plain');
+        } else {
+          // Handle key press
+          var key = theEvent.keyCode || theEvent.which;
+          key = String.fromCharCode(key);
+        }
+        var regex = /[0-9]|\./;
+        if (!regex.test(key)) {
+          theEvent.returnValue = false;
+          if (theEvent.preventDefault) theEvent.preventDefault();
+        }
+      }
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+      integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+      crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js"
+      integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT"
+      crossorigin="anonymous"></script>
+</body>
+
+</html>

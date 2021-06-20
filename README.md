@@ -1,4 +1,4 @@
-# Medical-Diagnosis-Deployment
+# Medical-Diagnosis-Deployment (USING PYTHON)
 
 Find the deployed models here and the app.py file
 
